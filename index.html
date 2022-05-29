@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intermittent Fasting</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 0% 0.5%,
+          rgb(241, 241, 242) 0.1%,
+          rgb(224, 226, 228) 100.2%
+        );
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      h1 {
+        color: #457049;
+        text-align: center;
+        margin: 30px auto 5px;
+        font-size: 38px;
+      }
+      h2 {
+        color: #457049;
+        text-align: center;
+        margin: 0 auto 35px;
+        font-size: 28px;
+        font-weight: normal;
+      }
+      img {
+        display: block;
+        margin: 0 auto 30px;
+        max-width: 500px;
+        border: 1px solid #457049;
+        border-radius: 10px;
+      }
+      hr {
+        max-width: 700px;
+      }
+      h3 {
+        color: #385170;
+        font-size: 24px;
+        margin: 25px auto 0px;
+        max-width: 600px;
+        text-align: center;
+      }
+      p {
+        font-size: 18px;
+        margin: 10px auto 30px;
+        line-height: 1.5;
+        max-width: 600px;
+      }
+      ul {
+        font-size: 18px;
+        margin: 10px auto 30px;
+      }
+      li {
+        padding: 3px 0;
+        margin: 0 auto;
+        max-width: 600px;
+      }
+      .benefit {
+        color: #5e3c53;
+        font-weight: bold;
+      }
+      strong {
+        color: #e85655;
+      }
+      button {
+        display: block;
+        margin: 40px auto 25px;
+        padding: 15px;
+        border: 1px solid #142d4c;
+        border-radius: 30px;
+        font-size: 20px;
+        color: #ffffff;
+        background: #e85655;
+        box-shadow: 3px 3px 10px rgba(37, 39, 89, 0.2);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 80%;
+        cursor: pointer;
+      }
+      a {
+        color: #5e3c53;
+      }
+      .footnote {
+        font-size: 14px;
+        text-align: center;
+      }
+      div {
+        font-size: 16px;
+        text-align: center;
+        color: #6b6965;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Intermittent Fasting</h1>
+    <h2>
+      It is not <em>what</em> you eat, but <em>when</em> you eat that matters
+    </h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/017/571/original/intermittent-fasting.jpg?1632363317"
+    />
+
+    <hr />
+    <h3>What is Intermittent Fasting?</h3>
+    <p>
+      Intermittent fasting is a trend quickly growing in popularity. Also known
+      as intermittent energy restriction, is an umbrella term for various meal
+      timing schedules that cycle between voluntary fasting (or reduced calorie
+      intake) and non-fasting over a given period. Methods of intermittent
+      fasting include alternate-day fasting, periodic fasting, and daily
+      time-restricted feeding. A type of periodic fasting known as the 5:2 diet
+      was popularised in the UK and Australia by Michael Mosley around 2012.
+      Intermittent fasting may have similar effects to a calorie-restriction
+      diet, and has been studied in the 21st century as a practice to possibly
+      reduce the risk of diet-related diseases, such as metabolic syndrome. A
+      2019 review concluded that intermittent fasting may help with obesity,
+      insulin resistance, dyslipidemia, hypertension, and inflammation.
+    </p>
+    <h3>Benefits of Intermittent Fasting</h3>
+    <ul>
+      <li>Changes the function of hormones, cells, and genes</li>
+      <li>
+        Can help you <span class="benefit">lose weight </span>and visceral fat
+      </li>
+      <li>Can reduce insulin resistance, lower risk of type 2 diabetes</li>
+      <li>Can reduce oxidative stress and inflammation in the body</li>
+      <li>May be beneficial for <span class="benefit">heart health</span></li>
+      <li>Induces various cellular repair processes</li>
+      <li>May help <span class="benefit">prevent cancer</span></li>
+      <li>Benefits your brain</li>
+      <li>May help prevent Alzheimer's disease</li>
+      <li>
+        May <span class="benefit">extend your lifepan</span>, helping you live
+        longer
+      </li>
+    </ul>
+    <h3>When Do I Eat?</h3>
+    <p>
+      There are a couple methods for integrating intermittent fasting into your
+      daily routine. One of the most popular, and the one we will discuss on
+      this site, is following the 16/8 method. The 16/8 method involves daily
+      fasts of about 16 hours. Each day you’ll restrict your eating to an
+      approximately 8-hour window during which you fit in two, three, or more
+      meals. Utilize the <strong>calculate your schedule</strong> button below
+      to determine timing that works well for you.
+      <br />
+      <br />
+      As a reminder, while there is growing research supporting the health
+      benefits of intermittent fasting, studies are preliminary and there is a
+      still a lot to learn about the long-term impacts. Always discuss with your
+      doctor before starting a new diet.
+    </p>
+    <button>Calculate your schedule</button>
+    <p class="footnote">
+      For more information check out
+      <a
+        href="https://en.wikipedia.org/wiki/Intermittent_fasting"
+        target="_blank"
+        >Wikipedia</a
+      >
+      and
+      <a
+        href="https://www.healthline.com/nutrition/10-health-benefits-of-intermittent-fasting#TOC_TITLE_HDR_11"
+        target="_blank"
+        >HealthLine</a
+      >
+    </p>
+    <div>Coded by Nicole Henely</div>
+    <script>
+      function calculateWindow() {
+        let duration = prompt("How many hours do you want to fast for?");
+        let start = prompt("What time of morning do you want to start eating?");
+        let end = Number(start) + 24 - Number(duration);
+        if (end < 12) {
+          alert(`Your window to eat is from ${start}am to ${end}am.`);
+        } else if (end === 12) {
+          alert(`Your window to eat is from ${start}am to ${end}pm.`);
+        } else if (end > 24) {
+          alert(
+            `Your window to eat is from ${start}am to ${Number(end) - 24}am`
+          );
+        } else if (end === 24) {
+          alert(
+            `Your window to eat is from ${start}am to ${Number(end) - 12}am.`
+          );
+        } else {
+          alert(
+            `Your window to eat is from ${start}am to ${Number(end) - 12}pm.`
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", calculateWindow);
+    </script>
+  </body>
+</html>
